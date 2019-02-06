@@ -1,0 +1,17 @@
+{
+    "name": "Salesforce Prevent Idp Logout",
+    "version": "1.0",
+    "description": "Prevents Saleforce from requesting a logout to the upstream identity provider (Auth0)",
+    "manifest_version": 2,
+    "icons":{
+        "128":"logout.png"
+     },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "https://auth0corp.auth0.com/*"
+    ],
+    "background": {
+        "scripts": ["background.js"]
+      }
+  }
