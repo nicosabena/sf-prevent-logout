@@ -15,5 +15,5 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
   },
   // only monitor this specific URL
   { urls: ["https://auth0corp.auth0.com/logout*"] },
-  ["blocking", "requestHeaders"]
+  ["blocking", "requestHeaders", "extraHeaders"]
 );
